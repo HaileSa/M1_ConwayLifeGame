@@ -1,6 +1,6 @@
 import sys
 import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))) ##Pour permettre a pytest de fonctionner
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))) #Pour permettre a pytest de fonctionner
 
 from implementations.implementation1 import create_grid, update_grid
 
