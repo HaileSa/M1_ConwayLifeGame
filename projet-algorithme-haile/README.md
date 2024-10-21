@@ -28,9 +28,10 @@ Veuillez entrer le nombre de générations à générer : 5
 Le programme affichera alors les générations successives avec un délai de 0,5 seconde entre chaque génération.
 
 ## Structure du projet
+
 Voici l'arborescence du projet :
 
-```
+```python
 .
 ├── README.md
 ├── analyses
@@ -50,6 +51,7 @@ Voici l'arborescence du projet :
 ```
 
 ### Implémentation
+
 La logique principale est dans implementation1.py, où les fonctions suivantes sont définies :
 
 **create_grid(n)**: Crée une grille de taille n avec des cellules vivantes (1) et mortes (0) générées aléatoirement.
@@ -71,21 +73,23 @@ Le jeu suit ces règles simples :
 
 Les tests unitaires sont situés dans le dossier tests, et peuvent être exécutés avec pytest pour s'assurer que les fonctions du jeu fonctionnent comme prévu.
 
-## Résultat : 
+## Résultat
 
 ![alt text](image.png)
 ![alt text](image-1.png)
 
+## Axes d'amélioration
 
-## Axes d'amélioration : 
+### 1. Interface Graphique
 
- ### 1. Interface Graphique
-- Remplacer l'affichage dans le terminal par une interface graphique plus interactive avec des bibliothèques comme `pygame`, `tkinter` ou `Streamlit`. 
+- Remplacer l'affichage dans le terminal par une interface graphique plus interactive avec des bibliothèques comme `pygame`, `tkinter` ou `Streamlit`.
 
-### 2. Motifs 
-- Créer une reconnaissance des motifs qui ne générent plus rien afin de les identifier et de pouvoir le dire à l'utilisateur 
+### 2. Motifs
+
+- Créer une reconnaissance des motifs qui ne générent plus rien afin de les identifier et de pouvoir le dire à l'utilisateur
 
 ### 3. Optimisation de la Simulation
+
 - **Suivi des cellules vivantes uniquement** : Plutôt que de mettre à jour toute la grille à chaque génération, je pourrais actualiser que les cellules vivantes et leurs voisines. Cela réduirait considérablement les calculs lorsque la grille est majoritairement vide. (Complexité + faible)
 
 **Have Fun !**

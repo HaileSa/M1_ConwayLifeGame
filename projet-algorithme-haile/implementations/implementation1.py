@@ -15,7 +15,6 @@ def print_grid(grid):
         print(" ".join(['♥' if cell == 1 else ' ' for cell in row]))
         
 def count_neighbors(grid, x, y, n):
-    # Directions to check for neighbors (left, right, up, down and diagonals)
     directions = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
     count = 0
     for direction_x, direction_y in directions:
